@@ -1,0 +1,181 @@
+@import 'reset';
+@import 'variable';
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+main {
+	min-height: calc(100vh - 145px);
+}
+.blue {
+	background-color: $blue;
+}
+.grey {
+	background-color: $text-color;
+}
+
+.green {
+	background-color: $green;
+}
+
+.aqua {
+	background-color: $aqua;
+}
+
+.yellow {
+	background-color: $yellow;
+}
+.item {
+	color: $white;
+	padding: 5px 15px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+.alert-body {
+	color: $white;
+	background-color: $red;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 15px 0;
+	margin-top: 20px;
+}
+
+.header {
+	background-color: $blue;
+	&__name {
+		padding: 20px 0;
+		font-size: 20px;
+		color: $white;
+	}
+}
+
+.search {
+	&-body {
+		margin: 20px 0;
+		padding: 20px 15px;
+		border: 1px solid $border-color;
+		border-radius: 5px;
+
+		&__title {
+			font-size: 40px;
+			padding-bottom: 10px;
+		}
+
+		&__text {
+			color: $text-color;
+			padding-bottom: 10px;
+		}
+
+		&__input {
+			padding: 10px;
+			border: 1px solid $border-color;
+			border-radius: 5px;
+			width: 100%;
+			cursor: pointer;
+		}
+	}
+}
+
+.profile {
+	&-body {
+		display: flex;
+		gap: 30px;
+		padding: 20px 15px;
+		border: 1px solid $border-color;
+		border-radius: 5px;
+		margin-bottom: 20px;
+	}
+	&-data {
+		&__img {
+			min-width: 250px;
+			min-height: 250px;
+			max-width: 250px;
+			max-height: 250px;
+			padding-bottom: 10px;
+		}
+		&__btn {
+			display: block;
+			color: $white;
+			background-color: $blue;
+			border-radius: 25px;
+			padding: 15px 0;
+			text-align: center;
+		}
+	}
+
+	&-info {
+		width: 100%;
+		&-header {
+			color: $white;
+			&__list {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+				margin-bottom: 30px;
+			}
+		}
+
+		&-footer {
+			&__item {
+				border: 1px solid $border-color;
+				padding: 15px;
+			}
+		}
+	}
+}
+
+.repos {
+	margin-bottom: 50px;
+	&__title {
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	&-body {
+		&__item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border: 1px solid $border-color;
+			border-radius: 5px;
+			padding: 20px 15px;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&-info {
+		&__list {
+			display: flex;
+			gap: 10px;
+		}
+	}
+}
+
+.footer {
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	&:before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 1px;
+		top: 0;
+		left: 0;
+		background-color: $border-color;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 1px;
+		bottom: 0;
+		left: 0;
+		background-color: $border-color;
+	}
+}
