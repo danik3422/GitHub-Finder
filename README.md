@@ -5,3 +5,4 @@ You can go to the site by [clicking](https://danik3422.github.io/) on the button
 This app can: 
 * Display 5 last repository
 * Take some info from profile (if the user filled it out)
+* Adaptive layout
