@@ -179,3 +179,48 @@ main {
 		background-color: $border-color;
 	}
 }
+
+@media (max-width: 860px) {
+	.repos__title {
+		text-align: center;
+	}
+	.profile-info {
+		position: relative;
+	}
+	.profile-info-header__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		text-align: center;
+	}
+
+	.profile-info-header__list {
+		margin-bottom: 20px;
+	}
+	.profile-info-footer {
+		width: 100%;
+	}
+}
+
+@media (max-width: 630px) {
+	.search-body {
+		text-align: center;
+	}
+	.profile-body {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.search-body {
+		&__title {
+			font-size: 30px;
+		}
+	}
+	.repos-body__item {
+		display: grid;
+		text-align: center;
+		justify-content: center;
+		gap: 20px;
+	}
+}
